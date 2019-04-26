@@ -1,0 +1,22 @@
+{
+  "name": "Boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel client/src/index.js client/src/index.html client/src/styles.css -o bundle.js -d client/dist --no-source-maps",
+    "build": "parcel build client/src/index.js client/src/index.html client/src/styles.css -o bundle.js -d client/dist --no-source-maps",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@material-ui/core": "^3.9.3",
+    "@material-ui/icons": "^3.0.2",
+    "express": "^4.16.4",
+    "parcel": "^1.12.3",
+    "react": "^16.8.6"
+  }
+}
