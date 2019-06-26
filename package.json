@@ -6,7 +6,7 @@
   "scripts": {
     "start": "npx nodemon server.js",
     "dev": "parcel client/src/index.js -o bundle.js -d client/dist",
-    "build": "parcel build client/src/index.js -o bundle.js -d client/dist"
+    "build": "parcel build client/src/index.js -o bundle.js -d client/dist && node server.js"
   },
   "keywords": [],
   "author": "",
