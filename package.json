@@ -4,19 +4,17 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "parcel client/src/index.js client/src/index.html client/src/styles.css -o bundle.js -d client/dist --no-source-maps",
-    "build": "parcel build client/src/index.js client/src/index.html client/src/styles.css -o bundle.js -d client/dist --no-source-maps",
-    "start": "node server.js"
+    "start": "npx nodemon server.js",
+    "dev": "parcel client/src/index.js -o bundle.js -d client/dist",
+    "build": "parcel build client/src/index.js -o bundle.js -d client/dist && node server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@material-ui/core": "^3.9.3",
-    "@material-ui/icons": "^3.0.2",
     "express": "^4.16.4",
-    "parcel": "^1.12.3",
-    "react": "^16.8.6"
+    "parcel-bundler": "^1.12.3",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
   }
 }
